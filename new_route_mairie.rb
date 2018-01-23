@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
+require 'watir'
 
 ### Important d'être connecter à internet pour que tout marhce :)
 
@@ -36,6 +37,8 @@ def get_all_the_url()
 end
 
 
+
+
 # l'url recupéré est sous cette forme "./95/villers-en-arthies.html"
 #on la formate dans cette fonction pourqu'elle est la bonne forme "http://annuaire-des-mairies.com/95/villers-en-arthies.html"
 #split('') pour la transformer en array; drop(1) enlève le premier element; *'' regoupe le tout et tranforme en chaine de carractère
@@ -53,3 +56,6 @@ def perform()
   end
   res
 end
+
+
+puts perform
