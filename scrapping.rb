@@ -3,7 +3,7 @@ require "google_drive"
 require_relative "new_route_mairie"
 require'json'
 
-
+#veuillez mettre votre fichier "config.json" dans le dossier contenant ce fichier
 session = GoogleDrive::Session.from_config("config.json")
 #on peut changer la clé par la clé d'une nouvelle feuille de calcul
 ws = session.spreadsheet_by_key("1F83fKNXujPd3mpfK2iq7Iz4ARlAk5D9uRfIjESL9v_w").worksheets[0]
