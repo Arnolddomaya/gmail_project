@@ -7,6 +7,7 @@ adress_mail = gets.chomp()
 puts "veuillez entrez votre mot de passe"
 mots_de_passe = gets.chomp()
 
+#veuillez mettre votre fichier "config.json" dans le même dossier"
 session = GoogleDrive::Session.from_config("config.json")
 #on se connecte sur la feuille qui contient les données sur les mairies
 @ws = session.spreadsheet_by_key("1J5Ajhk5-g6TAKFw8g4hsMhv92aDp1_SNCmKbgyghjn8").worksheets[0]
